@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!--
+    As you add to this URDF, please be aware that both the robot and
+    simulation include it. You must retain compatibility with all of
+    the following launch files:
+
+    ridgeback_viz/launch/view_model.launch
+    ridgeback_gazebo/launch/ridgeback_world.launch
+    ridgeback_base/launch/base.launch
+  -->
+
+  <xacro:include filename="accessories/sick_lms1xx_mount.urdf.xacro" />
+
+  <!-- If enabled, generate the front LASER payload (by default enabled and a SICK LMS111). -->
+  <xacro:if value="$(optenv RIDGEBACK_FRONT_LASER 0)">
+    <xacro:sick_lms1xx_mount prefix="front"
+                            topic="front/scan"
+                            location="1" />
+  </xacro:if>
+
+  <!-- If enabled, generate the rear LASER payload (by default, a SICK LMS111). -->
+  <xacro:if value="$(optenv RIDGEBACK_REAR_LASER 0)">
+    <xacro:sick_lms1xx_mount prefix="rear"
+                            topic="rear/scan"
+                            location="-1" />
+  </xacro:if>
+
+  <!--
+  <xacro:include filename="accessories/point_grey_flea.urdf.xacro" />
+
+  <xacro:if value="$(arg camera)">
+    <xacro:point_grey_flea3
+      prefix="front"
+      joint_parent="front_mount"
+      joint_xyz="0.135 0 0.015"
+      joint_rpy="0 0 0"
+      camera_x="0.0754"
+      camera_y="0.029"
+      camera_z="0.035"
+      camera_mass="0.085"
+      hfov="1.0471975512"
+      width="640"
+      height="512"
+      format="R8G8B8"
+      near="0.1"
+      far="300"
+      ns="ridgeback"
+      frame_id="front_mount"
+      />
+  </xacro:if>
+  -->
+</robot>
