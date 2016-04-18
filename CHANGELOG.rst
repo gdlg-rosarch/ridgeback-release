@@ -2,6 +2,9 @@
 Changelog for package ridgeback_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.4 (2016-04-18)
+------------------
+
 0.1.3 (2016-03-02)
 ------------------
 * Removed CATKIN_IGNORE from ridgeback_navigation.
