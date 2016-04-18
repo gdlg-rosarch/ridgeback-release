@@ -13,6 +13,10 @@ ridgeback_velocity_controller:
   twist_covariance_diagonal: [0.001, 0.001, 0.001, 1000000.0, 1000000.0, 0.03]
   cmd_vel_timeout: 0.25
 
+  # Override URDF look-up for wheel separation since the parent link is not the base_link.
+  wheel_separation_x: 0.638
+  wheel_separation_y: 0.551
+
   # Odometry fused with IMU is published by robot_localization, so
   # no need to publish a TF based on encoders alone.
   enable_odom_tf: false
@@ -26,14 +30,14 @@ ridgeback_velocity_controller:
   linear:
     x:
       has_velocity_limits    : true
-      max_velocity           : 1.0   # m/s
+      max_velocity           : 1.1   # m/s
       has_acceleration_limits: true
-      max_acceleration       : 0.50   # m/s^2
+      max_acceleration       : 2.5   # m/s^2
     y:
       has_velocity_limits    : true
-      max_velocity           : 1.0   # m/s
+      max_velocity           : 1.1   # m/s
       has_acceleration_limits: true
-      max_acceleration       : 0.50   # m/s^2
+      max_acceleration       : 2.5   # m/s^2
   angular:
     z:
       has_velocity_limits    : true
@@ -53,7 +57,7 @@ ekf_localization:
   odom0_differential: false
   imu0: /imu/data
   imu0_config: [false, false, false,
-                false, false, true,
+                false, false, false,
                 false, false, false,
                 false, false, true,
                 true, true, false]
