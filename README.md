@@ -1,3 +1,30 @@
+## ridgeback (indigo) - 0.1.8-0
+
+The packages in the `ridgeback` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --track indigo --ros-distro indigo ridgeback` on `Fri, 30 Sep 2016 15:05:34 -0000`
+
+These packages were released:
+- `ridgeback_control`
+- `ridgeback_description`
+- `ridgeback_msgs`
+- `ridgeback_navigation`
+
+Version of package(s) in repository `ridgeback`:
+
+- upstream repository: https://github.com/ridgeback/ridgeback.git
+- release repository: https://github.com/clearpath-gbp/ridgeback-release.git
+- rosdistro version: `0.1.7-0`
+- old version: `0.1.7-0`
+- new version: `0.1.8-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.21`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.4`
+- rosdistro version: `0.4.7`
+- vcstools version: `0.1.38`
+
+
 ## ridgeback (indigo) - 0.1.7-0
 
 The packages in the `ridgeback` repository were released into the `indigo` distro by running `/usr/bin/bloom-release -r indigo -t indigo ridgeback` on `Mon, 18 Jul 2016 14:53:36 -0000`
