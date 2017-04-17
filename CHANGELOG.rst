@@ -2,6 +2,11 @@
 Changelog for package ridgeback_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.9 (2017-04-17)
+------------------
+* Updated maintainer.
+* Contributors: Tony Baltovski
+
 0.1.8 (2016-09-30)
 ------------------
 
