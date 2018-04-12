@@ -2,10 +2,12 @@
 Changelog for package ridgeback_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.1.11 (2018-04-12)
--------------------
+0.2.0 (2018-04-12)
+------------------
+* Changed to in-order xacro parsing
+* Updated rolling window for odom responsiveness.  Minor changes to control and urdf syntax for kinetic
 * Updated to Package format 2.
-* Contributors: Tony Baltovski
+* Contributors: Dave Niewinski, Tony Baltovski
 
 0.1.10 (2017-06-26)
 -------------------
