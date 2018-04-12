@@ -1,3 +1,30 @@
+## ridgeback (kinetic) - 0.2.1-0
+
+The packages in the `ridgeback` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release ridgeback -t kinetic -r kinetic` on `Thu, 12 Apr 2018 04:53:38 -0000`
+
+These packages were released:
+- `ridgeback_control`
+- `ridgeback_description`
+- `ridgeback_msgs`
+- `ridgeback_navigation`
+
+Version of package(s) in repository `ridgeback`:
+
+- upstream repository: https://github.com/ridgeback/ridgeback.git
+- release repository: https://github.com/clearpath-gbp/ridgeback-release.git
+- rosdistro version: `0.2.0-0`
+- old version: `0.2.0-0`
+- new version: `0.2.1-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.4`
+- catkin_pkg version: `0.4.1`
+- rosdep version: `0.12.2`
+- rosdistro version: `0.6.8`
+- vcstools version: `0.1.40`
+
+
 ## ridgeback (kinetic) - 0.2.0-0
 
 The packages in the `ridgeback` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release ridgeback -t kinetic -r kinetic --new-track` on `Thu, 12 Apr 2018 04:27:36 -0000`
