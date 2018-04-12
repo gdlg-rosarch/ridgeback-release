@@ -2,6 +2,11 @@
 Changelog for package ridgeback_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.11 (2018-04-12)
+-------------------
+* Updated to Package format 2.
+* Contributors: Tony Baltovski
+
 0.1.10 (2017-06-26)
 -------------------
 
